@@ -663,35 +663,35 @@ def display_csv_input_fields() -> None :
     """
     line         = "" 
     grant_fields = {
-        'project-title_xx' :{ 'type':'text', 'value' :"" , 'note' : '_xx  represents a counter for multiple projects'},
-        'description_xx'   :{ 'type':'text', 'value' :"" ,'note' :'description of the project, _xx  represents a counter for multiple projects'},
-        'award_amount_currency_xx'  :{ 'type':'enumerated', 'value' :"USD" ,'note' :"Currency of grant,  _xx  represents a counter for multiple projects"},
-        'award_amount_value_xx'     :{ 'type':'float', 'value' :"" ,'note' :"Dollar amount given to the grant without ',' or '$',  _xx  represents multiple projects "},
-        'funding-type_xx_aa'  :{ 'type':'enumerated', 'value' :"contract / grant" ,'note' :'Type of funding to be used '},
-        'funding-amount_xx_aa'  :{ 'type':'enumerated', 'value' :"USD / EUR" ,'note' :'Currency of funding, _aa  represents a counter for multiple funding sources per project'},
-        'funding-currency_xx_aa':{ 'type':'float', 'value' :"" ,'note' :'dollar value without commas, _aa  represents a counter for multiple funding sources per project'},
-        'funding-percentage_xx_aa'  :{ 'type':'integer', 'value' :"" ,'note' :'percentage grant was funded, _aa  represents a counter for multiple funding sources per project'},
-        'funding-name_xx_aa'  :{ 'type':'text', 'value' :"" ,'note' :'name of organization or individual that funded grant, _aa  represents a counter for multiple funding sources'},
-        'funding-id_xx_aa'    :{ 'type':'hyperlink', 'value' :"" ,'note' :'doi id link,  _aa  represents a counter for multiple funding sources'},
-        'funding-scheme_xx_aa':{ 'type':'text', 'value' :"grant" ,'note' :'Type of funding applied,  _xx  represents a counter for multiple projects'},
-        'award-dates_start-date_xx':{ 'type':'yyyy-mm-dd', 'value' :"" ,'note' :'Award Start Date, _xx  represents a counter for multiple projects '},
-        'award-dates_end-date_xx'  :{ 'type':'yyyy-mm-dd', 'value' :"" ,'note' :'Award End Date , _xx  represents a counter for multiple projects'},
+        'project-title_xx'              :{ 'type':'text',       'value' :"" ,                                           'note' : '_xx  represents a counter for multiple projects'},
+        'description_xx'                :{ 'type':'text',       'value' :"" ,                                           'note' :'description of the project, _xx  represents a counter for multiple projects'},
+        'award_amount_currency_xx'      :{ 'type':'enumerated', 'value' :"USD" ,                                        'note' :"Currency of grant,  _xx  represents a counter for multiple projects"},
+        'award_amount_value_xx'         :{ 'type':'float',      'value' :"" ,                                           'note' :"Dollar amount given to the grant without ',' or '$',  _xx  represents multiple projects "},
+        'funding-type_xx_aa'            :{ 'type':'enumerated', 'value' :"contract / grant" ,                           'note' :'Type of funding to be used '},
+        'funding-amount_xx_aa'          :{ 'type':'enumerated', 'value' :"USD / EUR" ,                                  'note' :'Currency of funding, _aa  represents a counter for multiple funding sources per project'},
+        'funding-currency_xx_aa'        :{ 'type':'float',      'value' :"" ,                                           'note' :'dollar value without commas, _aa  represents a counter for multiple funding sources per project'},
+        'funding-percentage_xx_aa'      :{ 'type':'integer',    'value' :"" ,                                           'note' :'percentage grant was funded, _aa  represents a counter for multiple funding sources per project'},
+        'funding-name_xx_aa'            :{ 'type':'text',       'value' :"" ,                                           'note' :'name of organization or individual that funded grant, _aa  represents a counter for multiple funding sources'},
+        'funding-id_xx_aa'              :{ 'type':'hyperlink', 'value' :"" ,                                            'note' :'doi id link,  _aa  represents a counter for multiple funding sources'},
+        'funding-scheme_xx_aa'          :{ 'type':'text',       'value' :"grant" ,                                      'note' :'Type of funding applied,  _xx  represents a counter for multiple projects'},
+        'award-dates_start-date_xx'     :{ 'type':'yyyy-mm-dd', 'value' :"" ,                                           'note' :'Award Start Date, _xx  represents a counter for multiple projects '},
+        'award-dates_end-date_xx'       :{ 'type':'yyyy-mm-dd', 'value' :"" ,                                           'note' :'Award End Date , _xx  represents a counter for multiple projects'},
         
-        'person_role_xx_yy'  :{ 'type':'enumerated', 'value' :"lead_investigator / co-lead_investigator" ,'note' :'_yy  represents a counter for multiple people'},
-        'givenName_xx_yy'    :{ 'type':'text', 'value' :"" ,'note' :'_yy  represents a counter for multiple people'},
-        'alternateName_xx_yy':{ 'type':'text', 'value' :"" ,'note' :'_yy  represents a counter for multiple people'},
-        'familyName_xx_yy'   :{ 'type':'text', 'value' :"" ,'note' :'_yy  represents a counter for multiple people'},
-        'institution_xx_yy_zz'  :{ 'type':'text', 'value' :"" ,'note' :'_zz  represents a counter for multiple institutions'},
-        'institution-country_xx_yy_zz'  :{ 'type':'text', 'value' :"" ,'note' :'Country where institution resides, _zz  represents a counter for multiple institutions'},
-        'ROR_xx_yy_zz'  :{ 'type':'text', 'value' :"" ,'note' :'_zz  represents a counter for multiple institutions'},
-        'ORCHiD_xx_yy'    :{ 'type':'hypertext', 'value' :"" ,'note' :'_yy  represents a counter for multiple people'},
+        'person_role_xx_yy'             :{ 'type':'enumerated', 'value' :"lead_investigator / co-lead_investigator" ,   'note' :'_yy  represents a counter for multiple people'},
+        'givenName_xx_yy'               :{ 'type':'text',       'value' :"" ,                                           'note' :'_yy  represents a counter for multiple people'},
+        'alternateName_xx_yy'           :{ 'type':'text',       'value' :"" ,                                           'note' :'_yy  represents a counter for multiple people'},
+        'familyName_xx_yy'              :{ 'type':'text',       'value' :"" ,                                           'note' :'_yy  represents a counter for multiple people'},
+        'institution_xx_yy_zz'          :{ 'type':'text',       'value' :"" ,                                           'note' :'_zz  represents a counter for multiple institutions'},
+        'institution-country_xx_yy_zz'  :{ 'type':'text',       'value' :"" ,                                           'note' :'Country where institution resides, _zz  represents a counter for multiple institutions'},
+        'ROR_xx_yy_zz'                  :{ 'type':'text',       'value' :"" ,                                           'note' :'_zz  represents a counter for multiple institutions'},
+        'ORCHiD_xx_yy'                  :{ 'type':'hypertext',  'value' :"" ,                                           'note' :'_yy  represents a counter for multiple people'},
 
-        'institution_xx'  :{ 'type':'text', 'value' :"" ,'note' :'Institution associated with Grant, _xx  represents a counter for multiple projects '},
-        'award-number'  :{ 'type':'integer', 'value' :"" ,'note' :'ID number associated with this Grant'},
-        'award-start-date' :{ 'type':'yyyy-mm-dd', 'value' :"" ,'note' :'Award Payment Start Date '}, 
+        'institution_xx'                :{ 'type':'text',       'value' :"" ,                                           'note' :'Institution associated with Grant, _xx  represents a counter for multiple projects '},
+        'award-number'                  :{ 'type':'integer',    'value' :"" ,                                           'note' :'ID number associated with this Grant'},
+        'award-start-date'              :{ 'type':'yyyy-mm-dd', 'value' :"" ,                                           'note' :'Award Payment Start Date '}, 
         
-        'doi'       :{ 'type':'text', 'value' :"" ,'note' :'DOI ID '},        
-        'resource'  :{ 'type':'hyperlink', 'value' :"" ,'note' :'Landing page for article or research paper '}
+        'doi'                           :{ 'type':'text',       'value' :"" ,                                           'note' :'DOI ID '},        
+        'resource'                      :{ 'type':'hyperlink',  'value' :"" ,                                           'note' :'Landing page for article or research paper '}
        }
 
     
@@ -739,20 +739,20 @@ def parse_arguments() -> {} :
                     'csv_config'      : '' ,
                     'display_config'  : False
                     }
-    matrix  = {	'xml_output_file' : { 'help': 'The xml file version of the data for upload', 	'action' : None } ,
-        		'csv_input_file'  : { 	'help':	'csv file with fields' , 			'action' : None}, 
-        		'article_type' 	  : {     'help': 'type of article to upload : grant', 		'action' : None },
-			'doi_batch_id'    : {   'help': 'Batch name , should be unique' , 		'action' : None}, 
-			'depositor_name'  : { 	'help':	'Individual responsible for uploading xml', 	'action' : None}, 
-			'email_address'	  : { 	'help': 'Email of depositor' ,  			'action' : None}, 
+    matrix  = {	        'xml_output_file' : { 'help': 'The xml file version of the data for upload', 	'action' : None } ,
+        		'csv_input_file'  : { 'help':	'csv file with fields' , 			'action' : None}, 
+        		'article_type' 	  : { 'help': 'type of article to upload : grant', 		'action' : None },
+			'doi_batch_id'    : { 'help': 'Batch name , should be unique' , 		'action' : None}, 
+			'depositor_name'  : { 'help':	'Individual responsible for uploading xml', 	'action' : None}, 
+			'email_address'	  : { 'help': 'Email of depositor' ,  			        'action' : None}, 
 			'batch_log'       : { 'help': 'log of batch files created by this app', 	'action' : None }, 
-			'registrant'	  : {  	'help': 'Name of organization curating doi entries' , 	'action' : None},
-			'csv_input_fields': {  'help': 'Display the fields for the csv file' , 	'action' : 'store_true'},
-			'ror_csv'	  : { 		'help': 'csv file of ROR entries ( id, name ...) ' , 	'action' : None },
-			'check_links'     : {       'help': 'check the doi links' , 			'action' :'store_true' },
-			'doi_base'	  : {       	'help': 'https doi base to use when building links ', 	'action' : None },      
-			'csv_config'	  : { 	'help': 'CSV formatted configurtion file', 		'action' : None }, 
-			'display_config'  : { 	'help': 'Display the configuration', 			'action' : 'store_true'}
+			'registrant'	  : { 'help': 'Name of organization curating doi entries' , 	'action' : None},
+			'csv_input_fields': { 'help': 'Display the fields for the csv file' , 	        'action' : 'store_true'},
+			'ror_csv'	  : { 'help': 'csv file of ROR entries ( id, name ...) ' , 	'action' : None },
+			'check_links'     : { 'help': 'check the doi links' , 			        'action' :'store_true' },
+			'doi_base'	  : { 'help': 'https doi base to use when building links ', 	'action' : None },      
+			'csv_config'	  : { 'help': 'CSV formatted configurtion file', 		'action' : None }, 
+			'display_config'  : { 'help': 'Display the configuration', 			'action' : 'store_true'}
 		}
     try:
         # SET DEFAULTS        
