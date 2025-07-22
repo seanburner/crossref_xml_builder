@@ -1,0 +1,2 @@
+,csv_input_file,xml_output_file,doi_batch_id,article_type,depositor_name,email_address,registrant,doi_base,ror_csv,ror
+0,files/Example_Data.csv,files/XML_output.xml,Batch_0001,grant,<< person uploading data >> ,<< email of uploader >>,<< company name >>,https://doi.org/,ror_data_file.csv
