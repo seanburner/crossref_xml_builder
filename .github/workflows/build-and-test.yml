@@ -1,8 +1,8 @@
 name: Crossref Test
 
-on:
+on: [push, pull_request]
   push:
-    branches: [ dev ]
+    branches: [ master ]
 
 jobs:
   tox_test:
