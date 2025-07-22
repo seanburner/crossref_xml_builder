@@ -723,11 +723,11 @@ def parse_arguments() -> {} :
     args        = None 
     temp        = None    
     parser      = argparse.ArgumentParser(description='Import data from Data Application tool')
-    confFields  = { 'xml_output_file' :  str(datetime.now()).replace('-','').replace(' ','_').replace('.','').replace(':','') ,
+    confFields  = { 'xml_output_file' : "",
                     'csv_input_file'  : "",
                     'article_type'    : '',
                     'doi_batch_id'    : '',
-                    'timestamp'       :  str(datetime.now()).replace('-','').replace(' ','').replace(':','')[:13] ,  # prefer yyyymmddhhmmss or the unix epoch format ->  time.time()
+                    'timestamp'       : "",
                     'depositor_name'  : '',
                     'email_address'   : '',
                     'registrant'      : '',
@@ -739,42 +739,31 @@ def parse_arguments() -> {} :
                     'csv_config'      : '' ,
                     'display_config'  : False
                     }
+    matrix  = {	'xml_output_file' : { 'help': 'The xml file version of the data for upload', 	'action' : None } ,
+        		'csv_input_file'  : { 	'help':	'csv file with fields' , 			'action' : None}, 
+        		'article_type' 	  : {     'help': 'type of article to upload : grant', 		'action' : None },
+			'doi_batch_id'    : {   'help': 'Batch name , should be unique' , 		'action' : None}, 
+			'depositor_name'  : { 	'help':	'Individual responsible for uploading xml', 	'action' : None}, 
+			'email_address'	  : { 	'help': 'Email of depositor' ,  			'action' : None}, 
+			'batch_log'       : { 'help': 'log of batch files created by this app', 	'action' : None }, 
+			'registrant'	  : {  	'help': 'Name of organization curating doi entries' , 	'action' : None},
+			'csv_input_fields': {  'help': 'Display the fields for the csv file' , 	'action' : 'store_true'},
+			'ror_csv'	  : { 		'help': 'csv file of ROR entries ( id, name ...) ' , 	'action' : None },
+			'check_links'     : {       'help': 'check the doi links' , 			'action' :'store_true' },
+			'doi_base'	  : {       	'help': 'https doi base to use when building links ', 	'action' : None },      
+			'csv_config'	  : { 	'help': 'CSV formatted configurtion file', 		'action' : None }, 
+			'display_config'  : { 	'help': 'Display the configuration', 			'action' : 'store_true'}
+		}
     try:
-        # SET DEFAULTS
-        parser.add_argument('--xml_output_file'     , help = 'The xml file version of the data for upload')        
-        parser.add_argument('--csv_input_file'      , help = 'csv file with fields')
-        parser.add_argument('--article_type'        , help = 'type of article to upload : grant')
-        parser.add_argument('--doi_batch_id'        , help = 'Batch name , should be unique')
-        parser.add_argument('--depositor_name'      , help = 'Individual responsible for uploading xml')
-        parser.add_argument('--email_address'       , help = 'Email of depositor')
-        parser.add_argument('--batch_log'           , help = 'log of batch files created by this app')
-        parser.add_argument('--registrant'          , help = 'Name of organization curating doi entries')
-        parser.add_argument('--csv_input_fields'    , help = 'Display the fields for the csv file' , action='store_true')
-        parser.add_argument('--ror_csv'             , help = 'csv file of ROR entries ( id, name ...) ')
-        parser.add_argument('--check_links'         , help = 'check the doi links' , action='store_true')
-        parser.add_argument('--doi_base'            , help = 'https doi base to use when building links ' )
-        parser.add_argument('--csv_config'          , help = 'CSV formatted configurtion file' )
-        parser.add_argument('--display_config'      , help = 'Display the configuration', action='store_true' )
-
+        # SET DEFAULTS        
+        for key in matrix.keys() :            
+            parser.add_argument('--'+key     , help = matrix[key]['help'], action= matrix[key]['action'], dest=key )
         
         args = parser.parse_args()
 
-        confFields['xml_output_file']   = update_args_field ( args.xml_output_file , confFields['xml_output_file'])
-        confFields['csv_input_file']    = update_args_field ( args.csv_input_file ,  confFields['csv_input_file'])
-        confFields['article_type']      = update_args_field ( args.article_type ,    confFields['article_type'])
-        confFields['doi_batch_id']      = update_args_field ( args.doi_batch_id ,    confFields['doi_batch_id'])
-        confFields['depositor_name']    = update_args_field ( args.depositor_name,   confFields['depositor_name'])
-        confFields['email_address']     = update_args_field ( args.email_address ,   confFields['email_address'])
-        confFields['batch_log']         = update_args_field ( args.batch_log,        confFields['batch_log'] )
-        confFields['csv_input_fields']  = update_args_field ( args.csv_input_fields, confFields['csv_input_fields'] )
-        confFields['ror_csv']           = update_args_field ( args.ror_csv,          confFields['ror_csv'] )
-        confFields['check_links']       = update_args_field ( args.check_links,      confFields['check_links'] )        
-        confFields['doi_base']          = update_args_field ( args.doi_base,         confFields['doi_base'] )     
-        confFields['csv_config']        = update_args_field ( args.csv_config,       confFields['csv_config'] )
-        confFields['display_config']    = update_args_field ( args.display_config,   confFields['display_config'] )
-        
-        
-        confFields['registrant']  = update_args_field ( args.registrant, confFields['registrant'] )
+        for key in matrix.keys() :
+            confFields[key]   = update_args_field (  getattr(args, key) , confFields[key]) 
+
 
         return confFields
 
@@ -824,12 +813,14 @@ def main() -> None :
         config1 = parse_arguments()       
 
         #IF CSV_CONFIG  USE THIS FIRST, THEN COMMAND LINE ARGS
+        print( 'Checking csv_config ' )
         if config1['csv_config'] != ''  :
             configs = apply_csv_config ( config1)
         else :
             configs = config1 
             
-        # IF THE USER NEEDS TO KNOW WHICH FIELDS TO INCLUDE 
+        # IF THE USER NEEDS TO KNOW WHICH FIELDS TO INCLUDE
+        print( 'Checking  csv input fields ' )
         if configs['csv_input_fields'] :
             display_csv_input_fields()
             
@@ -842,10 +833,12 @@ def main() -> None :
         #    print(' No Batch log ')
 
         # DISPLAY THE CONFIG IF SELECTED
+        print( 'Checking display config ' )
         if configs['display_config'] :
             display_config(  configs)        
 
         # LOAD THE INPUT FILE
+        print( 'Checking csv input file ' )
         if configs['csv_input_file'] != "" :
             csvFile = read_csv(fileName = configs['csv_input_file'])
 

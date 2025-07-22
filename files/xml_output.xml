@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+  <doi_batch xmlns="http://www.crossref.org/grant_id/0.2.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:fr="http://www.crossref.org/fundref/submission/1.0"
+    xsi:schemaLocation="http://www.crossref.org/grant_id/0.2.0 http://www.crossref.org/schemas/grant_id0.2.0.xsd 
+    http://www.crossref.org/fundref/submission/1.0 http://www.crossref.org/schemas/fundref1.0.xsd" 
+     version="0.2.0"> 
+ <head> 
+	<doi_batch_id>Batch_0001</doi_batch_id> 
+	<timestamp>2025072218571</timestamp>
+	<depositor>
+		<depositor_name>Sean Burner</depositor_name>
+		<email_address>s.burner@aicr.org</email_address>
+	</depositor>
+	<registrant><< company name >></registrant>
+ </head>
+ <body>
+   <grant>
+     <project>
+	<project-title xml:lang="en">ArticleTitle_001</project-title>
+	<investigators>
+	  <person role="investigator">
+		<givenName>First_Name_000</givenName>
+		<familyName>Last_Name_000</familyName>
+		<alternateName>Full_or_Nck_Name_000</alternateName>
+		<affiliation>
+		  <institution>Institution_000</institution>
+		</affiliation>
+		<ORCID>https://orcid.org/Researcher_ORCiD_000</ORCID>
+	  </person>
+	</investigators>
+	<description xml:lang="en">DescriptionOfArticle_001</description>
+	<award_amount currency="USD">110000.0</award_amount>
+	<funding  amount="110000" currency="USD" funding-type="award" >
+		<funder-name>Fundering_Organization_000</funder-name>
+		<funder-id>Funder_DOI_Hyperlink_000</funder-id>
+		<funding-scheme>grant</funding-scheme>
+	</funding>
+	<award-dates  start-date="Award_Start_Date_001"   />
+     </project>
+     <award-number>Award_Number_001</award-number>
+     <doi_data>
+       <doi>doi_prefix/doi_suffix_000</doi>  
+       <resource>https://your.company.com/article_landing_page</resource> 
+    </doi_data>
+   </grant>
+
+   <grant>
+     <project>
+	<project-title xml:lang="en">ArticleTitle_004</project-title>
+	<investigators>
+	  <person role="investigator">
+		<givenName>First_Name_001</givenName>
+		<familyName>Last_Name_001</familyName>
+		<alternateName>Full_or_Nck_Name_001</alternateName>
+		<affiliation>
+		  <institution>Institution_001</institution>
+		</affiliation>
+		<ORCID>https://orcid.org/Researcher_ORCiD_001</ORCID>
+	  </person>
+	</investigators>
+	<description xml:lang="en">DescriptionOfArticle_004</description>
+	<award_amount currency="USD">165000.0</award_amount>
+	<funding  amount="165000" currency="USD" funding-type="award" >
+		<funder-name>Fundering_Organization_001</funder-name>
+		<funder-id>Funder_DOI_Hyperlink_001</funder-id>
+		<funding-scheme>grant</funding-scheme>
+	</funding>
+	<award-dates  start-date="Award_Start_Date_004"   />
+     </project>
+     <award-number>Award_Number_004</award-number>
+     <doi_data>
+       <doi>doi_prefix/doi_suffix_001</doi>  
+       <resource>https://your.company.com/article_landing_page</resource> 
+    </doi_data>
+   </grant>
+
+   <grant>
+     <project>
+	<project-title xml:lang="en">ArticleTitle_008</project-title>
+	<investigators>
+	  <person role="investigator">
+		<givenName>First_Name_002</givenName>
+		<familyName>Last_Name_002</familyName>
+		<alternateName>Full_or_Nck_Name_002</alternateName>
+		<affiliation>
+		  <institution>Institution_002</institution>
+		</affiliation>
+		<ORCID>https://orcid.org/Researcher_ORCiD_002</ORCID>
+	  </person>
+	</investigators>
+	<description xml:lang="en">DescriptionOfArticle_008</description>
+	<award_amount currency="USD">165000.0</award_amount>
+	<funding  amount="165000" currency="USD" funding-type="award" >
+		<funder-name>Fundering_Organization_002</funder-name>
+		<funder-id>Funder_DOI_Hyperlink_002</funder-id>
+		<funding-scheme>grant</funding-scheme>
+	</funding>
+	<award-dates  start-date="Award_Start_Date_008"   />
+     </project>
+     <award-number>Award_Number_008</award-number>
+     <doi_data>
+       <doi>doi_prefix/doi_suffix_002</doi>  
+       <resource>https://your.company.com/article_landing_page</resource> 
+    </doi_data>
+   </grant>
+
+   <grant>
+     <project>
+	<project-title xml:lang="en">ArticleTitle_009</project-title>
+	<investigators>
+	  <person role="investigator">
+		<givenName>First_Name_003</givenName>
+		<familyName>Last_Name_003</familyName>
+		<alternateName>Full_or_Nck_Name_003</alternateName>
+		<affiliation>
+		  <institution>Institution_003</institution>
+		</affiliation>
+		<ORCID>https://orcid.org/Researcher_ORCiD_003</ORCID>
+	  </person>
+	</investigators>
+	<description xml:lang="en">DescriptionOfArticle_009</description>
+	<award_amount currency="USD">164990.0</award_amount>
+	<funding  amount="164990" currency="USD" funding-type="award" >
+		<funder-name>Fundering_Organization_003</funder-name>
+		<funder-id>Funder_DOI_Hyperlink_003</funder-id>
+		<funding-scheme>grant</funding-scheme>
+	</funding>
+	<award-dates  start-date="Award_Start_Date_009"   />
+     </project>
+     <award-number>Award_Number_009</award-number>
+     <doi_data>
+       <doi>doi_prefix/doi_suffix_003</doi>  
+       <resource>https://your.company.com/article_landing_page</resource> 
+    </doi_data>
+   </grant>
+
+   <grant>
+     <project>
+	<project-title xml:lang="en">ArticleTitle_014</project-title>
+	<investigators>
+	  <person role="investigator">
+		<givenName>First_Name_004</givenName>
+		<familyName>Last_Name_004</familyName>
+		<alternateName>Full_or_Nck_Name_004</alternateName>
+		<affiliation>
+		  <institution>Institution_004</institution>
+		</affiliation>
+		<ORCID>https://orcid.org/Researcher_ORCiD_004</ORCID>
+	  </person>
+	</investigators>
+	<description xml:lang="en">DescriptionOfArticle_014</description>
+	<award_amount currency="USD">165000.0</award_amount>
+	<funding  amount="165000" currency="USD" funding-type="award" >
+		<funder-name>Fundering_Organization_004</funder-name>
+		<funder-id>Funder_DOI_Hyperlink_004</funder-id>
+		<funding-scheme>grant</funding-scheme>
+	</funding>
+	<award-dates  start-date="Award_Start_Date_014"   />
+     </project>
+     <award-number>Award_Number_014</award-number>
+     <doi_data>
+       <doi>doi_prefix/doi_suffix_004</doi>  
+       <resource>https://your.company.com/article_landing_page</resource> 
+    </doi_data>
+   </grant>
+
+   <grant>
+     <project>
+	<project-title xml:lang="en">ArticleTitle_020</project-title>
+	<investigators>
+	  <person role="investigator">
+		<givenName>First_Name_005</givenName>
+		<familyName>Last_Name_005</familyName>
+		<alternateName>Full_or_Nck_Name_005</alternateName>
+		<affiliation>
+		  <institution>Institution_005</institution>
+		</affiliation>
+		<ORCID>https://orcid.org/Researcher_ORCiD_005</ORCID>
+	  </person>
+	</investigators>
+	<description xml:lang="en">DescriptionOfArticle_020</description>
+	<award_amount currency="USD">165000.0</award_amount>
+	<funding  amount="165000" currency="USD" funding-type="award" >
+		<funder-name>Fundering_Organization_005</funder-name>
+		<funder-id>Funder_DOI_Hyperlink_005</funder-id>
+		<funding-scheme>grant</funding-scheme>
+	</funding>
+	<award-dates  start-date="Award_Start_Date_020"   />
+     </project>
+     <award-number>Award_Number_020</award-number>
+     <doi_data>
+       <doi>doi_prefix/doi_suffix_005</doi>  
+       <resource>https://your.company.com/article_landing_page</resource> 
+    </doi_data>
+   </grant>
+
+   <grant>
+     <project>
+	<project-title xml:lang="en">ArticleTitle_024</project-title>
+	<investigators>
+	  <person role="investigator">
+		<givenName>First_Name_006</givenName>
+		<familyName>Last_Name_006</familyName>
+		<alternateName>Full_or_Nck_Name_006</alternateName>
+		<affiliation>
+		  <institution>Institution_006</institution>
+		</affiliation>
+		<ORCID>https://orcid.org/Researcher_ORCiD_006</ORCID>
+	  </person>
+	</investigators>
+	<description xml:lang="en">DescriptionOfArticle_024</description>
+	<award_amount currency="USD">142988.0</award_amount>
+	<funding  amount="142988" currency="USD" funding-type="award" >
+		<funder-name>Fundering_Organization_006</funder-name>
+		<funder-id>Funder_DOI_Hyperlink_006</funder-id>
+		<funding-scheme>grant</funding-scheme>
+	</funding>
+	<award-dates  start-date="Award_Start_Date_024"   />
+     </project>
+     <award-number>Award_Number_024</award-number>
+     <doi_data>
+       <doi>doi_prefix/doi_suffix_006</doi>  
+       <resource>https://your.company.com/article_landing_page</resource> 
+    </doi_data>
+   </grant>
+
+   <grant>
+     <project>
+	<project-title xml:lang="en">ArticleTitle_028</project-title>
+	<investigators>
+	  <person role="investigator">
+		<givenName>First_Name_007</givenName>
+		<familyName>Last_Name_007</familyName>
+		<alternateName>Full_or_Nck_Name_007</alternateName>
+		<affiliation>
+		  <institution>Institution_007</institution>
+		</affiliation>
+		<ORCID>https://orcid.org/Researcher_ORCiD_007</ORCID>
+	  </person>
+	</investigators>
+	<description xml:lang="en">DescriptionOfArticle_028</description>
+	<award_amount currency="USD">165000.0</award_amount>
+	<funding  amount="165000" currency="USD" funding-type="award" >
+		<funder-name>Fundering_Organization_007</funder-name>
+		<funder-id>Funder_DOI_Hyperlink_007</funder-id>
+		<funding-scheme>grant</funding-scheme>
+	</funding>
+	<award-dates  start-date="Award_Start_Date_028"   />
+     </project>
+     <award-number>Award_Number_028</award-number>
+     <doi_data>
+       <doi>doi_prefix/doi_suffix_007</doi>  
+       <resource>https://your.company.com/article_landing_page</resource> 
+    </doi_data>
+   </grant>
+
+   <grant>
+     <project>
+	<project-title xml:lang="en">ArticleTitle_036</project-title>
+	<investigators>
+	  <person role="investigator">
+		<givenName>First_Name_008</givenName>
+		<familyName>Last_Name_008</familyName>
+		<alternateName>Full_or_Nck_Name_008</alternateName>
+		<affiliation>
+		  <institution>Institution_008</institution>
+		</affiliation>
+		<ORCID>https://orcid.org/Researcher_ORCiD_008</ORCID>
+	  </person>
+	</investigators>
+	<description xml:lang="en">DescriptionOfArticle_036</description>
+	<award_amount currency="USD">165000.0</award_amount>
+	<funding  amount="165000" currency="USD" funding-type="award" >
+		<funder-name>Fundering_Organization_008</funder-name>
+		<funder-id>Funder_DOI_Hyperlink_008</funder-id>
+		<funding-scheme>grant</funding-scheme>
+	</funding>
+	<award-dates  start-date="Award_Start_Date_036"   />
+     </project>
+     <award-number>Award_Number_036</award-number>
+     <doi_data>
+       <doi>doi_prefix/doi_suffix_008</doi>  
+       <resource>https://your.company.com/article_landing_page</resource> 
+    </doi_data>
+   </grant>
+
+   <grant>
+     <project>
+	<project-title xml:lang="en">ArticleTitle_038</project-title>
+	<investigators>
+	  <person role="investigator">
+		<givenName>First_Name_009</givenName>
+		<familyName>Last_Name_009</familyName>
+		<alternateName>Full_or_Nck_Name_009</alternateName>
+		<affiliation>
+		  <institution>Institution_009</institution>
+		</affiliation>
+		<ORCID>https://orcid.org/Researcher_ORCiD_009</ORCID>
+	  </person>
+	</investigators>
+	<description xml:lang="en">DescriptionOfArticle_038</description>
+	<award_amount currency="USD">165000.0</award_amount>
+	<funding  amount="165000" currency="USD" funding-type="award" >
+		<funder-name>Fundering_Organization_009</funder-name>
+		<funder-id>Funder_DOI_Hyperlink_009</funder-id>
+		<funding-scheme>grant</funding-scheme>
+	</funding>
+	<award-dates  start-date="Award_Start_Date_038"   />
+     </project>
+     <award-number>Award_Number_038</award-number>
+     <doi_data>
+       <doi>doi_prefix/doi_suffix_009</doi>  
+       <resource>https://your.company.com/article_landing_page</resource> 
+    </doi_data>
+   </grant>
+
+   <grant>
+     <project>
+	<project-title xml:lang="en">ArticleTitle_042</project-title>
+	<investigators>
+	  <person role="investigator">
+		<givenName>First_Name_010</givenName>
+		<familyName>Last_Name_010</familyName>
+		<alternateName>Full_or_Nck_Name_010</alternateName>
+		<affiliation>
+		  <institution>Institution_010</institution>
+		</affiliation>
+		<ORCID>https://orcid.org/Researcher_ORCiD_010</ORCID>
+	  </person>
+	</investigators>
+	<description xml:lang="en">DescriptionOfArticle_042</description>
+	<award_amount currency="USD">123405.0</award_amount>
+	<funding  amount="123405" currency="USD" funding-type="award" >
+		<funder-name>Fundering_Organization_010</funder-name>
+		<funder-id>Funder_DOI_Hyperlink_010</funder-id>
+		<funding-scheme>grant</funding-scheme>
+	</funding>
+	<award-dates  start-date="Award_Start_Date_042"   />
+     </project>
+     <award-number>Award_Number_042</award-number>
+     <doi_data>
+       <doi>doi_prefix/doi_suffix_010</doi>  
+       <resource>https://your.company.com/article_landing_page</resource> 
+    </doi_data>
+   </grant>
+
+   <grant>
+     <project>
+	<project-title xml:lang="en">ArticleTitle_043</project-title>
+	<investigators>
+	  <person role="investigator">
+		<givenName>First_Name_011</givenName>
+		<familyName>Last_Name_011</familyName>
+		<alternateName>Full_or_Nck_Name_011</alternateName>
+		<affiliation>
+		  <institution>Institution_011</institution>
+		</affiliation>
+		<ORCID>https://orcid.org/Researcher_ORCiD_011</ORCID>
+	  </person>
+	</investigators>
+	<description xml:lang="en">DescriptionOfArticle_043</description>
+	<award_amount currency="USD">165000.0</award_amount>
+	<funding  amount="165000" currency="USD" funding-type="award" >
+		<funder-name>Fundering_Organization_011</funder-name>
+		<funder-id>Funder_DOI_Hyperlink_011</funder-id>
+		<funding-scheme>grant</funding-scheme>
+	</funding>
+	<award-dates  start-date="Award_Start_Date_043"   />
+     </project>
+     <award-number>Award_Number_043</award-number>
+     <doi_data>
+       <doi>doi_prefix/doi_suffix_011</doi>  
+       <resource>https://your.company.com/article_landing_page</resource> 
+    </doi_data>
+   </grant>
+
+   <grant>
+     <project>
+	<project-title xml:lang="en">ArticleTitle_046</project-title>
+	<investigators>
+	  <person role="investigator">
+		<givenName>First_Name_012</givenName>
+		<familyName>Last_Name_012</familyName>
+		<alternateName>Full_or_Nck_Name_012</alternateName>
+		<affiliation>
+		  <institution>Institution_012</institution>
+		</affiliation>
+		<ORCID>https://orcid.org/Researcher_ORCiD_012</ORCID>
+	  </person>
+	</investigators>
+	<description xml:lang="en">DescriptionOfArticle_046</description>
+	<award_amount currency="USD">165000.0</award_amount>
+	<funding  amount="165000" currency="USD" funding-type="award" >
+		<funder-name>Fundering_Organization_012</funder-name>
+		<funder-id>Funder_DOI_Hyperlink_012</funder-id>
+		<funding-scheme>grant</funding-scheme>
+	</funding>
+	<award-dates  start-date="Award_Start_Date_046"   />
+     </project>
+     <award-number>Award_Number_046</award-number>
+     <doi_data>
+       <doi>doi_prefix/doi_suffix_012</doi>  
+       <resource>https://your.company.com/article_landing_page</resource> 
+    </doi_data>
+   </grant>
+
+   <grant>
+     <project>
+	<project-title xml:lang="en">ArticleTitle_047</project-title>
+	<investigators>
+	  <person role="investigator">
+		<givenName>First_Name_013</givenName>
+		<familyName>Last_Name_013</familyName>
+		<alternateName>Full_or_Nck_Name_013</alternateName>
+		<affiliation>
+		  <institution>Institution_013</institution>
+		</affiliation>
+		<ORCID>https://orcid.org/Researcher_ORCiD_013</ORCID>
+	  </person>
+	</investigators>
+	<description xml:lang="en">DescriptionOfArticle_047</description>
+	<award_amount currency="USD">246808.0</award_amount>
+	<funding  amount="246808" currency="USD" funding-type="award" >
+		<funder-name>Fundering_Organization_013</funder-name>
+		<funder-id>Funder_DOI_Hyperlink_013</funder-id>
+		<funding-scheme>grant</funding-scheme>
+	</funding>
+	<award-dates  start-date="Award_Start_Date_047"   />
+     </project>
+     <award-number>Award_Number_047</award-number>
+     <doi_data>
+       <doi>doi_prefix/doi_suffix_013</doi>  
+       <resource>https://your.company.com/article_landing_page</resource> 
+    </doi_data>
+   </grant>
+
+   <grant>
+     <project>
+	<project-title xml:lang="en">ArticleTitle_051</project-title>
+	<investigators>
+	  <person role="investigator">
+		<givenName>First_Name_014</givenName>
+		<familyName>Last_Name_014</familyName>
+		<alternateName>Full_or_Nck_Name_014</alternateName>
+		<affiliation>
+		  <institution>Institution_014</institution>
+		</affiliation>
+		<ORCID>https://orcid.org/Researcher_ORCiD_014</ORCID>
+	  </person>
+	</investigators>
+	<description xml:lang="en">DescriptionOfArticle_051</description>
+	<award_amount currency="USD">100000.0</award_amount>
+	<funding  amount="100000" currency="USD" funding-type="award" >
+		<funder-name>Fundering_Organization_014</funder-name>
+		<funder-id>Funder_DOI_Hyperlink_014</funder-id>
+		<funding-scheme>grant</funding-scheme>
+	</funding>
+	<award-dates  start-date="Award_Start_Date_051"   />
+     </project>
+     <award-number>Award_Number_051</award-number>
+     <doi_data>
+       <doi>doi_prefix/doi_suffix_014</doi>  
+       <resource>https://your.company.com/article_landing_page</resource> 
+    </doi_data>
+   </grant>
+
+   <grant>
+     <project>
+	<project-title xml:lang="en">ArticleTitle_052</project-title>
+	<investigators>
+	  <person role="investigator">
+		<givenName>First_Name_015</givenName>
+		<familyName>Last_Name_015</familyName>
+		<alternateName>Full_or_Nck_Name_015</alternateName>
+		<affiliation>
+		  <institution>Institution_015</institution>
+		</affiliation>
+		<ORCID>https://orcid.org/Researcher_ORCiD_015</ORCID>
+	  </person>
+	</investigators>
+	<description xml:lang="en">DescriptionOfArticle_052</description>
+	<award_amount currency="USD">174213.0</award_amount>
+	<funding  amount="174213" currency="USD" funding-type="award" >
+		<funder-name>Fundering_Organization_015</funder-name>
+		<funder-id>Funder_DOI_Hyperlink_015</funder-id>
+		<funding-scheme>grant</funding-scheme>
+	</funding>
+	<award-dates  start-date="Award_Start_Date_052"   />
+     </project>
+     <award-number>Award_Number_052</award-number>
+     <doi_data>
+       <doi>doi_prefix/doi_suffix_015</doi>  
+       <resource>https://your.company.com/article_landing_page</resource> 
+    </doi_data>
+   </grant>
+
+   <grant>
+     <project>
+	<project-title xml:lang="en">ArticleTitle_054</project-title>
+	<investigators>
+	  <person role="investigator">
+		<givenName>First_Name_016</givenName>
+		<familyName>Last_Name_016</familyName>
+		<alternateName>Full_or_Nck_Name_016</alternateName>
+		<affiliation>
+		  <institution>Institution_016</institution>
+		</affiliation>
+		<ORCID>https://orcid.org/Researcher_ORCiD_016</ORCID>
+	  </person>
+	</investigators>
+	<description xml:lang="en">DescriptionOfArticle_054</description>
+	<award_amount currency="USD">164677.0</award_amount>
+	<funding  amount="164677" currency="USD" funding-type="award" >
+		<funder-name>Fundering_Organization_016</funder-name>
+		<funder-id>Funder_DOI_Hyperlink_016</funder-id>
+		<funding-scheme>grant</funding-scheme>
+	</funding>
+	<award-dates  start-date="Award_Start_Date_054"   />
+     </project>
+     <award-number>Award_Number_054</award-number>
+     <doi_data>
+       <doi>doi_prefix/doi_suffix_016</doi>  
+       <resource>https://your.company.com/article_landing_page</resource> 
+    </doi_data>
+   </grant>
+
+   <grant>
+     <project>
+	<project-title xml:lang="en">ArticleTitle_058</project-title>
+	<investigators>
+	  <person role="investigator">
+		<givenName>First_Name_017</givenName>
+		<familyName>Last_Name_017</familyName>
+		<alternateName>Full_or_Nck_Name_017</alternateName>
+		<affiliation>
+		  <institution>Institution_017</institution>
+		</affiliation>
+		<ORCID>https://orcid.org/Researcher_ORCiD_017</ORCID>
+	  </person>
+	</investigators>
+	<description xml:lang="en">DescriptionOfArticle_058</description>
+	<award_amount currency="USD">165000.0</award_amount>
+	<funding  amount="165000" currency="USD" funding-type="award" >
+		<funder-name>Fundering_Organization_017</funder-name>
+		<funder-id>Funder_DOI_Hyperlink_017</funder-id>
+		<funding-scheme>grant</funding-scheme>
+	</funding>
+	<award-dates  start-date="Award_Start_Date_058"   />
+     </project>
+     <award-number>Award_Number_058</award-number>
+     <doi_data>
+       <doi>doi_prefix/doi_suffix_017</doi>  
+       <resource>https://your.company.com/article_landing_page</resource> 
+    </doi_data>
+   </grant>
+
+   <grant>
+     <project>
+	<project-title xml:lang="en">ArticleTitle_065</project-title>
+	<investigators>
+	  <person role="investigator">
+		<givenName>First_Name_018</givenName>
+		<familyName>Last_Name_018</familyName>
+		<alternateName>Full_or_Nck_Name_018</alternateName>
+		<affiliation>
+		  <institution>Institution_018</institution>
+		</affiliation>
+		<ORCID>https://orcid.org/Researcher_ORCiD_018</ORCID>
+	  </person>
+	</investigators>
+	<description xml:lang="en">DescriptionOfArticle_065</description>
+	<award_amount currency="USD">103457.0</award_amount>
+	<funding  amount="103457" currency="USD" funding-type="award" >
+		<funder-name>Fundering_Organization_018</funder-name>
+		<funder-id>Funder_DOI_Hyperlink_018</funder-id>
+		<funding-scheme>grant</funding-scheme>
+	</funding>
+	<award-dates  start-date="Award_Start_Date_065"   />
+     </project>
+     <award-number>Award_Number_065</award-number>
+     <doi_data>
+       <doi>doi_prefix/doi_suffix_018</doi>  
+       <resource>https://your.company.com/article_landing_page</resource> 
+    </doi_data>
+   </grant>
+
+   <grant>
+     <project>
+	<project-title xml:lang="en">ArticleTitle_067</project-title>
+	<investigators>
+	  <person role="investigator">
+		<givenName>First_Name_019</givenName>
+		<familyName>Last_Name_019</familyName>
+		<alternateName>Full_or_Nck_Name_019</alternateName>
+		<affiliation>
+		  <institution>Institution_019</institution>
+		</affiliation>
+		<ORCID>https://orcid.org/Researcher_ORCiD_019</ORCID>
+	  </person>
+	</investigators>
+	<description xml:lang="en">DescriptionOfArticle_067</description>
+	<award_amount currency="USD">165000.0</award_amount>
+	<funding  amount="165000" currency="USD" funding-type="award" >
+		<funder-name>Fundering_Organization_019</funder-name>
+		<funder-id>Funder_DOI_Hyperlink_019</funder-id>
+		<funding-scheme>grant</funding-scheme>
+	</funding>
+	<award-dates  start-date="Award_Start_Date_067"   />
+     </project>
+     <award-number>Award_Number_067</award-number>
+     <doi_data>
+       <doi>doi_prefix/doi_suffix_019</doi>  
+       <resource>https://your.company.com/article_landing_page</resource> 
+    </doi_data>
+   </grant>
+
+ </body>
+</doi_batch>
