@@ -810,14 +810,13 @@ def main() -> None :
     
     try:
         # GET THE CONFIGURATION - EITHER DEFAULTS OR COMMAND LINE GIVEN        
-        config1 = parse_arguments()       
+        configs = parse_arguments()       
 
         #IF CSV_CONFIG  USE THIS FIRST, THEN COMMAND LINE ARGS
         print( 'Checking csv_config ' )
-        if config1['csv_config'] != ''  :
-            configs = apply_csv_config ( config1)
-        else :
-            configs = config1 
+        if configs['csv_config'] != ''  :
+            configs = apply_csv_config ( configs)
+        
             
         # IF THE USER NEEDS TO KNOW WHICH FIELDS TO INCLUDE
         print( 'Checking  csv input fields ' )
