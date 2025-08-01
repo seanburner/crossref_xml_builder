@@ -567,18 +567,15 @@ def read_csv( fileName : str) -> object :
             print("\t\t >>   " + str(entry) )
 
 
-
-def apply_csv_config ( configs : dict) -> dict:
+def blank_config() -> dict:
     """
-        IF THE USER PROVIDED A VALID CSV CONFIG FILE , APPLY THOSE SETTINGS AND THEN LATER APPLY OTHER COMMAND LINE ARGS
-
-        PARAMETERS :
-                        configs     : configuration dictionary 
-        RETURNS    :
-                        configuration dictionary 
+        Provides a blank configs dictionary with default values
+        PARAMETERS:
+                    None 
+        RETURNS   :
+                    dictionary 
     """
-    config_file = None
-    config_new  = { 'xml_output_file' :  str(datetime.now()).replace('-','').replace(' ','_').replace('.','').replace(':','') ,
+    return { 'xml_output_file' :  str(datetime.now()).replace('-','').replace(' ','_').replace('.','').replace(':','') ,
                     'csv_input_file'  : "",
                     'article_type'    : '',
                     'doi_batch_id'    : '',
@@ -593,7 +590,20 @@ def apply_csv_config ( configs : dict) -> dict:
                     'doi_base'        : '',
                     'csv_config'      : '' ,
                     'display_config'  : False
-                    } 
+                    }
+
+
+def apply_csv_config ( configs : dict) -> dict:
+    """
+        IF THE USER PROVIDED A VALID CSV CONFIG FILE , APPLY THOSE SETTINGS AND THEN LATER APPLY OTHER COMMAND LINE ARGS
+
+        PARAMETERS :
+                        configs     : configuration dictionary 
+        RETURNS    :
+                        configuration dictionary 
+    """
+    config_file = None
+    config_new  = blank_config() 
     try:
         if not os.path.exists(  configs['csv_config'] ) :
             print ("\t\t* Provided CSV config file was not present/readable")
@@ -723,23 +733,8 @@ def parse_arguments() -> {} :
     args        = None 
     temp        = None    
     parser      = argparse.ArgumentParser(description='Import data from Data Application tool')
-    configs     = { 'xml_output_file' : "",
-                    'csv_input_file'  : "",
-                    'article_type'    : '',
-                    'doi_batch_id'    : '',
-                    'timestamp'       : "",
-                    'depositor_name'  : '',
-                    'email_address'   : '',
-                    'registrant'      : '',
-                    'batch_log'       : '' ,
-                    'csv_input_fields': False   ,
-                    'ror_csv'         : '',
-                    'check_links'     : False,
-                    'doi_base'        : '',
-                    'csv_config'      : '' ,
-                    'display_config'  : False
-                    }
-    matrix  = {	        'xml_output_file' : { 'help': 'The xml file version of the data for upload', 	'action' : None } ,
+    configs     =  blank_config() 
+    matrix      = {	'xml_output_file' : { 'help': 'The xml file version of the data for upload', 	'action' : None } ,
         		'csv_input_file'  : { 'help':	'csv file with fields' , 			'action' : None}, 
         		'article_type' 	  : { 'help': 'type of article to upload : grant', 		'action' : None },
 			'doi_batch_id'    : { 'help': 'Batch name , should be unique' , 		'action' : None}, 
