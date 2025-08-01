@@ -723,7 +723,7 @@ def parse_arguments() -> {} :
     args        = None 
     temp        = None    
     parser      = argparse.ArgumentParser(description='Import data from Data Application tool')
-    confFields  = { 'xml_output_file' : "",
+    configs     = { 'xml_output_file' : "",
                     'csv_input_file'  : "",
                     'article_type'    : '',
                     'doi_batch_id'    : '',
@@ -762,10 +762,10 @@ def parse_arguments() -> {} :
         args = parser.parse_args()
 
         for key in matrix.keys() :
-            confFields[key]   = update_args_field (  getattr(args, key) , confFields[key]) 
+            configs[key]   = update_args_field (  getattr(args, key) , configs[key]) 
 
 
-        return confFields
+        return configs
 
     except:
         print("\t\t|EXCEPTION: MAIN::" + str(inspect.currentframe().f_code.co_name) + " - Ran into an exception:" )
